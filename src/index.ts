@@ -75,4 +75,10 @@ function usdToInr(amount: number|string):number{
 
 console.log(usdToInr(1897));
 
+//  literal types
 
+type Qunatity = 100 | 200;
+let qunatity: Qunatity = 200;
+
+type Metric = "cm" | "in";
+let metric:Metric = "cm"; 
