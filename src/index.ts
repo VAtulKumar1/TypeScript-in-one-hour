@@ -63,4 +63,16 @@ user.expire(date);
 // user.expire(date);
 
 
+//  union type
+
+function usdToInr(amount: number|string):number{
+    if(typeof amount === "number")
+        return amount*81;
+    else
+        return parseInt(amount)*81;
+
+}
+
+console.log(usdToInr(1897));
+
 
