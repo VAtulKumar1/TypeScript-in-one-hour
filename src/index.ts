@@ -18,3 +18,25 @@ function calculateSum(num1:number,num2: number):number{
 }
 let calculatedSum=calculateSum(100,200);
 console.log(calculatedSum);
+
+
+// objects 
+
+let user:{
+    id : number,
+    email:string,
+    password:string,
+    expire: (date:Date) => void
+
+} = {
+    id: 1,
+    email: "atul@gmail.com",
+    password: "system123#",
+    expire:(date:Date)=> {
+        console.log(date)
+    
+    }
+}
+
+let date:Date= new Date();
+user.expire(date);
