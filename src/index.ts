@@ -21,14 +21,15 @@ console.log(calculatedSum);
 
 
 // objects 
-
-let user:{
+type User ={
     id : number,
     email:string,
     password:string,
     expire: (date:Date) => void
 
-} = {
+}
+
+let user:User= {
     id: 1,
     email: "atul@gmail.com",
     password: "system123#",
@@ -40,3 +41,26 @@ let user:{
 
 let date:Date= new Date();
 user.expire(date);
+
+
+
+// let user:{
+    // id : number,
+    // email:string,
+    // password:string,
+    // expire: (date:Date) => void
+// } = {
+//     id: 1,
+//     email: "atul@gmail.com",
+//     password: "system123#",
+//     expire:(date:Date)=> {
+//         console.log(date)
+    
+//     }
+// }
+
+// let date:Date= new Date();
+// user.expire(date);
+
+
+
