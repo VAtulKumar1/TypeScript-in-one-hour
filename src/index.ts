@@ -82,3 +82,17 @@ let qunatity: Qunatity = 200;
 
 type Metric = "cm" | "in";
 let metric:Metric = "cm"; 
+
+
+// null types
+
+function sayHello(name:string | null | undefined){
+    if(name)
+        console.log(name.toLocaleLowerCase());
+    else
+        console.log("Hello");
+        
+    
+}
+
+console.log(sayHello(null));
